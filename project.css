@@ -1,0 +1,312 @@
+*{
+	font-family: "Open Sans";
+	font-weight:bold;
+}
+
+html{
+	background-image:url(images/bg.jpg);
+	background-repeat:repeat;
+}
+
+#rightSideBar{
+	position:relative;
+	right: 2vh;
+	top: 2vh;
+	margin: 0;
+	z-index:1;
+}
+
+#userInfo{
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	width: 40vh;
+	padding-top:2vh;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+
+	text-align:center;
+    display: inline-block;
+	position: absolute;
+	right:0%;
+}
+
+#listDiv{
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	width: 40vh;
+	top: 20vh;
+	padding-top:2vh;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+
+	text-align:center;
+    display: inline-block;
+	position: absolute;
+	right:0%;
+}
+
+#songListTitle{
+	background-color: rgba(255, 255, 255, 0.88);
+	color: black;
+	font-size: 1.1em;
+	padding-top:1vh;
+	height: 4vh;
+}
+
+#sidebar {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 40vh;
+	height: 96vh;
+	position: fixed;
+	left: 2vh;
+	top: 2vh;
+	float: left;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+#voting{
+	background-color: rgba(255, 255, 255, 0.88);
+	padding: 20px;
+	font-size: 1.1em;
+}
+
+.voteElement{
+	background-color: rgba(255, 255, 255, 0.88);
+	width: 37vh;
+	color: black;
+	border: none;
+	padding: 1vh 0vh 1vh 0vh;
+	margin: 2vh 0vh 0vh 0vh;
+	outline: none;
+	font-size: 0.8em;
+	border-style: solid;
+	border-width: 4px;
+	border-color: rgba(150, 150, 150, 1);
+}
+
+.voteElementUser{
+	background-color: rgba(255, 255, 255, 0.88);
+	width: 37vh;
+	color: black;
+	border: none;
+	padding: 1vh 0vh 1vh 0vh;
+	margin: 2vh 0vh 0vh 0vh;
+	outline: none;
+	font-size: 0.8em;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.voteElementUser:hover{
+	font-size: 0.8em;
+	padding: 20px;
+}
+
+.voteElement:hover + .voteElementUserDescription{
+	padding: 0;
+	margin: -0.1vh;
+	border-radius:0px 0px 10px 10px;
+	-moz-border-radius:0px 0px 10px 10px;
+	-webkit-border-radius:0px 0px 10px 10px;
+	display: block;
+	font-size: 0.8em;
+}
+
+.voteElementUser:hover + .voteElementUserDescription{
+	padding: 0;
+	margin: -0.1vh;
+	border-radius:0px 0px 10px 10px;
+	-moz-border-radius:0px 0px 10px 10px;
+	-webkit-border-radius:0px 0px 10px 10px;
+	display: block;
+	font-size: 0.8em;
+}
+
+.voteElementUserDescription{
+	display: none;
+	font-size: 0.8em;
+}
+
+.loginField{
+	margin: 0.5vh;
+	border-radius:5px
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border: none;
+	height: 2.5vh;
+	text-align: center;
+}
+
+.loginInput{
+	width: 30vh;
+}
+
+#loginInfo{
+	background-color: rgba(0, 0, 0, 0.8);
+	margin-top: 5vh;
+	height: 15vh;
+	padding: 5vh;
+}
+
+#loginInfoButton{
+	cursor:pointer;
+	width: 15vh;
+	margin-top: 3vh;
+	margin-bottom: -2vh;
+	outline: none;
+}
+
+#loginInfoButton:hover{
+	background-color: rgba(114, 188, 30, 1);
+}
+
+#error{
+	color: red;
+	font-size: 0.2em;
+	padding-top: 3vh;
+}
+
+#addsongInfo{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#buttonSubmit{
+	margin: 0.5vh;
+    border-radius: 5px -moz-border-radius:5px;
+    -webkit-border-radius: 5px;
+    border: none;
+    height: 2.5vh;
+	cursor: pointer;
+    outline: none;
+	width:15vh;
+	margin-top:3vh;
+}
+
+#buttonCancel{
+	margin: 0.5vh;
+    border-radius: 5px -moz-border-radius:5px;
+    -webkit-border-radius: 5px;
+    border: none;
+    height: 2.5vh;
+	cursor: pointer;
+    outline: none;
+	width:15vh;
+	margin-bottom:3vh;
+}
+
+#buttonSubmit:hover{
+	background-color: rgba(114, 188, 30, 1);
+}
+
+#buttonCancel:hover{
+	background-color: rgba(114, 188, 30, 1);
+}
+
+#createInfo{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#loginTitle{
+	margin-top: 25vh;
+	font-weight: bold;
+	font-size: 4em;
+}
+
+#addSongButton{
+	border: none;
+	outline: none;
+	cursor:pointer;
+	background-color: rgba(255, 255, 255, 0.88);
+	width: 100%;
+	padding: 1vh 0vh 1vh 0vh;
+	margin: 0vh 0vh 1vh 0vh;
+	color: black;
+	font-size: 0.8em;
+}
+
+#addSongButton:hover{
+	background-color: rgba(114, 188, 30, 1);
+}
+
+#loginButton{
+	border: none;
+	outline: none;
+	cursor:pointer;
+	background-color: rgba(255, 255, 255, 0.88);
+	width: 100%;
+	padding: 1vh 0vh 1vh 0vh;
+	margin: -1vh 0vh 3vh 0vh;
+	color: black;
+	font-size: 0.8em;
+}
+
+#loginButton:hover{
+	background-color: rgba(114, 188, 30, 1);
+}
+
+#logoutButton{
+	border: none;
+	outline: none;
+	cursor:pointer;
+	background-color: rgba(255, 255, 255, 0.88);
+	width: 100%;
+	padding: 1vh 0vh 1vh 0vh;
+	margin: -1vh 0vh 3vh 0vh;
+	color: black;
+	font-size: 0.8em;
+}
+
+#logoutButton:hover{
+	background-color: rgba(114, 188, 30, 1);
+}
+
+#videos{
+	position:absolute;
+	left: 50%;
+	top: 2vh;
+	z-index:0;
+}
+
+#videoDiv{
+	position: relative; 
+	left: -50%;
+	border-collapse: collapse;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	margin-bottom:2vh;
+}
+
+#video{
+	margin: 2vh;
+	float: left;
+}
+
+#buttonList{
+  background-image: url(images/list.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* put the height and width of your image here */
+  height: 50px;
+  width: 200px;
+  border: none;
+}
+
+#songlist{
+}
+
+#list{
+	margin-right:1.5vh;
+	margin-bottom:2vh;
+	color: rgba(0,0,0,0);
+}
+
+#download{
+	margin-right:1.5vh;
+	margin-top:2vh;
+}
